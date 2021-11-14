@@ -12,7 +12,7 @@ const MyOrder = () => {
     const [allOrders, setAllOrders] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:7000/order/${user?.email}`)
+        fetch(`https://salty-crag-79590.herokuapp.com/order/${user?.email}`)
             .then(res => res.json())
             .then(data => setAllOrders(data))
     }, [user?.email])
@@ -21,7 +21,7 @@ const MyOrder = () => {
     const deleteBtn = id => {
         const confirm = window.confirm('Are you sure to cancel this order? Think again...')
         if (confirm) {
-            fetch(`http://localhost:7000/order/${id}`, {
+            fetch(`https://salty-crag-79590.herokuapp.com/order/${id}`, {
                 method: 'DELETE'
             }).then(res => res.json())
                 .then(data => {
@@ -40,7 +40,7 @@ const MyOrder = () => {
             <Row xs={1} md={2} className="g-4 py-5">
                 {
                     allOrders.map(order => <div key={order._id}>
-                        <div className="d-flex justify-content-around p-2 border border-secondary">
+                        <div className="d-flex justify-content-around p-2 text-light bg-secondary">
                             <div className="mx-2">
                                 <h5>{order?.productName}</h5>
                                 <h5>${order?.price}</h5>

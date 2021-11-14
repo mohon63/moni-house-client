@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Products = () => {
     const [products, setProducts] = useState([])
     useEffect(() => {
-        fetch('http://localhost:7000/products')
+        fetch('https://salty-crag-79590.herokuapp.com//products')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
@@ -23,7 +23,7 @@ const Products = () => {
                             products.slice(0, 6).map(product => <Col key={product?._id}>
                                 <Card className="shadow p-3 mb-5 bg-body rounded">
                                     <div className="text-center">
-                                        <Card.Img style={{ width: '50%' }} variant="top" src={product?.img} />
+                                        <Card.Img style={{ width: '50%', height: '210px' }} variant="top" src={product?.img} />
                                     </div>
                                     <div className="p-3">
                                         <div className="d-flex align-items-center justify-content-between">
@@ -31,7 +31,7 @@ const Products = () => {
                                         </div>
                                         <p className="p-0 m-0">{product?.des}</p>
                                         <div className="d-flex justify-content-between pt-3">
-                                            <h2>$ 50</h2>
+                                            <h2>$ {product?.price}</h2>
                                             <Link to={`/purchase/${product._id}`}><Button >Order Now</Button></Link>
                                         </div>
                                     </div>

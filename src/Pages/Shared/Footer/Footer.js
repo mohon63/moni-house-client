@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-sm-12 col-md-6">
                         <h2>About</h2>
-                        <p className="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+                        <p className="text-justify">The Xperia 1 III features a 12 MP sensor, which offers reading speeds up to 3x faster than smartphone cameras with higher megapixel counts, and a 3D iToF sensor, which instantly calculates the distance between the camera and your subject. The result is fast, accurate autofocus in any scene.</p>
                     </div>
 
                     <div className="col-xs-6 col-md-3">

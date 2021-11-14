@@ -9,7 +9,7 @@ const MakeAdmin = () => {
     }
     const handleAdmin = e => {
         const user = { email }
-        fetch('http://localhost:7000/admin', {
+        fetch('https://salty-crag-79590.herokuapp.com/admin', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

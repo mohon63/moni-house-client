@@ -34,7 +34,7 @@ const Register = () => {
 
     const savedUser = (name, email, role) => {
         const user = { name, email, role: role }
-        fetch('http://localhost:7000/users', {
+        fetch('https://salty-crag-79590.herokuapp.com/users', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(user)

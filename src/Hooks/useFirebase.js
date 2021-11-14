@@ -46,7 +46,7 @@ const useFirebase = () => {
             if (user) {
                 setUser(user)
                 setAdminLoading(true)
-                fetch(`http://localhost:7000/users/${user?.email}`)
+                fetch(`https://salty-crag-79590.herokuapp.com/users/${user?.email}`)
                     .then(res => res.json())
                     .then(data => setAdmin(data.admin))
                     .finally(() => setAdminLoading(false))
