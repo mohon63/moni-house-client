@@ -1,0 +1,57 @@
+.cus-bg-2 {
+    background-image: url(https://www.gulftoday.ae/-/media/gulf-today/images/articles/lifestyle/2019/3/12/mobile-750x500.ashx?h=500&w=750&hash=4E70BD3821E5C3646EF45B87FB621CFA);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+}
+.cus-bg-2::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.50);
+}
+textarea:focus, input:focus {
+    color: rgb(162, 162, 162);
+}
+
+input, select, textarea{
+    color: gray;
+}
+
+/* .newsletter {
+    padding: 80px 0;
+    background: #19beda;
+    } */
+    
+    .newsletter .content {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2; }
+    .newsletter .content h2 {
+    color: #b9d7f0;
+    margin-bottom: 40px; }
+    .newsletter .content .form-control {
+    height: 50px;
+    border-color: #ffffff;
+    border-radius:0;
+    }
+    .newsletter .content.form-control:focus {
+    box-shadow: none;
+    border: 2px solid #243c4f;
+    }
+    .newsletter .content .btn {
+    min-height: 50px; 
+    border-radius:0;
+    background: #243c4f;
+    color: #fff;
+    font-weight:600;
+    }
