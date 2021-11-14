@@ -1,4 +1,4 @@
-# Project name: Tour Today
+# Project name: Mobi House
 
 Live site: https://mobi-house-eec4c.firebaseapp.com/
 
