@@ -27,10 +27,14 @@ const MakeAdmin = () => {
         <Container>
             <small className="text-light">#make_admin</small>
             <div>
-                <div>
+                <div className="input-group mb-3">
+                    <input className="border border-success" onBlur={handleOnBlur} type="text" />
+                    <button className="btn btn-outline-success" onClick={handleAdmin}>Make admin</button>
+                </div>
+                {/*  <div>
                     <input onBlur={handleOnBlur} type="text" /><br />
                     <button onClick={handleAdmin}>Make admin</button>
-                </div>
+                </div> */}
             </div>
         </Container>
     );
